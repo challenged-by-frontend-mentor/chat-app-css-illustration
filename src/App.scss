@@ -1,0 +1,58 @@
+$header-color: hsl(271, 36%, 24%);
+$paragraph-color: hsl(270, 7%, 64%);
+$gradient-pink: hsl(293, 100%, 63%);
+$gradient-violet: hsl(264, 100%, 61%);
+$bottom-background-color: hsl(206, 6%, 79%);
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 65px 30px;
+  border: 1px solid red;
+  overflow: hidden;
+
+  .mobile-mockup {
+    margin-bottom: 70px;
+  }
+
+  .header {
+    text-align: center;
+
+    h1 {
+      font-size: 2.55rem;
+      color: $header-color;
+      margin-bottom: 30px;
+    }
+
+    p {
+      color: $paragraph-color;
+      line-height: 1.8rem;
+    }
+  }
+}
+
+.container::before {
+  content: "";
+  width: 500px;
+  height: 800px;
+  background-image: linear-gradient($gradient-pink, $gradient-violet);
+  border-radius: 400px;
+  position: absolute;
+  top: -45%;
+  left: -85%;
+  z-index: -1;
+}
+
+.container::after {
+  content: "";
+  width: 500px;
+  height: 800px;
+  background-color: rgba($bottom-background-color, 0.2);
+  border-radius: 400px;
+  position: absolute;
+  bottom: -80%;
+  right: -85%;
+  z-index: -1;
+}
