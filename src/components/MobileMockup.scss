@@ -17,6 +17,7 @@ $placeholder-text-color: hsl(206, 6%, 79%);
   border: 10px solid white;
   background-color: $app-background-color;
   border-radius: 25px;
+  overflow: hidden;
 
   display: grid;
   grid-template-rows: 66px 1fr;
@@ -47,6 +48,7 @@ $placeholder-text-color: hsl(206, 6%, 79%);
     padding: 30px 15px 12px 15px;
     color: $app-background-color;
     border-radius: 20px 20px 5px 5px;
+    position: relative;
 
     .left-side-chat-head {
       padding-right: 8px;
@@ -80,7 +82,20 @@ $placeholder-text-color: hsl(206, 6%, 79%);
     }
 
     .right-side-chat-head {
-      margin-bottom: 4px;
+      margin-bottom: 3px;
+      width: fit-content;
+      height: 10px;
+    }
+
+    &::before {
+      content: "";
+      width: 130px;
+      height: 30px;
+      background-color: $white;
+      border-radius: 0 0 15px 15px;
+      position: absolute;
+      top: -10px;
+      left: 50px;
     }
   }
 
@@ -94,14 +109,22 @@ $placeholder-text-color: hsl(206, 6%, 79%);
     .chat-boxes {
       .text-left-chat,
       .text-right-chat,
+      .img-right-chat,
+      .promotion-left-chat {
+        box-shadow: 0 10px 10px -10px rgba($color: black, $alpha: 0.1);
+      }
+
+      .text-left-chat,
+      .text-right-chat,
       .time-option p {
-        font-size: 0.5rem;
+        font-size: 0.494rem;
         font-weight: 500;
+        line-height: 0.65rem;
       }
 
       .text-left-chat,
       .text-right-chat {
-        padding: 8px;
+        padding: 8px 8px 6px 8px;
         width: fit-content;
         max-width: 128px;
         height: fit-content;
@@ -157,7 +180,7 @@ $placeholder-text-color: hsl(206, 6%, 79%);
       .promotion-left-chat {
         width: 160px;
         height: fit-content;
-        padding: 7px 17px 7px 7px;
+        padding: 8px 17px 8px 8px;
         justify-content: space-between;
 
         background-image: linear-gradient(
@@ -182,7 +205,7 @@ $placeholder-text-color: hsl(206, 6%, 79%);
 
         .promotion-price {
           color: $white;
-          font-size: 1rem;
+          font-size: 0.85rem;
         }
       }
     }
@@ -214,15 +237,4 @@ $placeholder-text-color: hsl(206, 6%, 79%);
       }
     }
   }
-}
-
-.mobile-mockup::before {
-  content: "";
-  width: 130px;
-  height: 30px;
-  background-color: $white;
-  border-radius: 0 0 15px 15px;
-  position: absolute;
-  top: 65px;
-  left: 120px;
 }
