@@ -15,26 +15,25 @@ The designs were created to the following widths:
 
 #### Text
 
-- Pale Violet (sub-heading at the top of the app UI): hsl(276, 100%, 81%)
-- Moderate Violet (chat on the left): hsl(276, 55%, 52%)
-- Desaturated Dark Violet (chat on the right): hsl(271, 15%, 43%)
-- Grayish Blue (placeholder text): hsl(206, 6%, 79%)
-- Very Dark Desaturated Violet (main heading): hsl(271, 36%, 24%)
-- Dark Grayish Violet (paragraph): hsl(270, 7%, 64%)
+- Purple 300 (sub-heading at the top of the app UI): hsl(276, 100%, 81%)
+- Purple 600 (chat on the left): hsl(276, 55%, 52%)
+- Gray 500 (chat on the right, paragraph): hsl(270, 7%, 64%)
+- Gray 300 (placeholder text): hsl(206, 6%, 79%)
+- Purple 950 (main heading): hsl(271, 36%, 24%)
 
 #### Gradients
 
 These two colors are the vibrant background colors you see throughout the design and are applied as a linear gradient:
 
-- Light Magenta: hsl(293, 100%, 63%)
-- Light Violet: hsl(264, 100%, 61%)
+- Pink 500: hsl(293, 100%, 63%)
+- Purple 500: hsl(264, 100%, 61%)
 
 ### Secondary
 
-- White: hsl(0, 0%, 100%)
-- Light Grayish Violet (app background): hsl(270, 20%, 96%)
-- Very Dark Desaturated Violet (submit button background): hsl(271, 36%, 24%)
-- Very Light Magenta (radio button outline): hsl(289, 100%, 72%)
+- White: hsl(0, 100%, 100%)
+- Gray 100 (app background): hsl(270, 20%, 96%)
+- Purple 950 (submit button background): hsl(271, 36%, 24%)
+- Pink 400 (radio button outline): hsl(289, 100%, 72%)
 
 ## Typography
 
