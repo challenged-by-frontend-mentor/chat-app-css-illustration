@@ -6,7 +6,7 @@ const Footer = () => {
         href="https://www.frontendmentor.io/challenges/chat-app-css-illustration-O5auMkFqY"
         target="_blank"
         rel="noopener noreferrer"
-        aria-label="Frontend Mentor (opens in a new tab)"
+        className="footer__link"
       >
         Frontend Mentor
       </a>
@@ -15,7 +15,7 @@ const Footer = () => {
         href="https://github.com/VangmanawKairung"
         target="_blank"
         rel="noopener noreferrer"
-        aria-label="Kairung Vangmanaw's GitHub profile (opens in a new tab)"
+        className="footer__link"
       >
         Kairung Vangmanaw
       </a>
