@@ -77,6 +77,7 @@ const Mockup = () => {
             className="chat__input"
             placeholder="Type a message…"
             aria-label="Type a message"
+            readOnly
           />
           <button
             type="submit"
