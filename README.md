@@ -1,23 +1,25 @@
 # Frontend Mentor - Chat app CSS illustration solution
 
+![](.reference/preview.jpg)
+
 This is a solution to the [Chat app CSS illustration challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/chat-app-css-illustration-O5auMkFqY). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
 ## Table of contents
 
-- [Overview](#overview)
-  - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
-  - [AI Collaboration](#ai-collaboration)
-- [Author](#author)
-- [Acknowledgments](#acknowledgments)
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
+- [Frontend Mentor - Chat app CSS illustration solution](#frontend-mentor---chat-app-css-illustration-solution)
+  - [Table of contents](#table-of-contents)
+  - [Overview](#overview)
+    - [The challenge](#the-challenge)
+    - [Screenshot](#screenshot)
+    - [Links](#links)
+  - [My process](#my-process)
+    - [Built with](#built-with)
+    - [What I learned](#what-i-learned)
+    - [Continued development](#continued-development)
+    - [Useful resources](#useful-resources)
+    - [AI Collaboration](#ai-collaboration)
+  - [Author](#author)
+  - [Acknowledgments](#acknowledgments)
 
 ## Overview
 
@@ -30,20 +32,20 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+<details>
+  <summary>Mobile view</summary>
+  <img src='screenshots/mobile-view.png' alt='Social links profile challenge - Mobile view' width='375px'>
+</details>
 
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+<details>
+  <summary>Desktop view</summary>
+  <img src='screenshots/desktop-view.png' alt='Social links profile challenge - Desktop view'>
+</details>
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Responsive Chat App with React & Fluid CSS Clamp Positioning](https://www.frontendmentor.io/solutions/chat-app-css-illustration-with-react-and-sass-o8dRc3eBpR)
+- Live Site URL: [Frontend Mentor | Chat App CSS Illustration](https://challenged-by-frontend-mentor.github.io/chat-app-css-illustration/)
 
 ## My process
 
@@ -52,71 +54,53 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
+- BEM Naming Methodology
+- CSS clamp() function
+- [React](https://react.dev/) - JS library for building component-based UI
+- [Vite](https://vitejs.dev/) - Next Generation Frontend Tooling
+- [React Icons](https://react-icons.github.io/react-icons/) - For clean UI icons
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+In this project, I deepened my understanding of fluid responsive design without over-relying on standard media queries for every single breakpoint. Key takeaways include:
 
-To see how you can add code snippets, see below:
+- **Fluid Layouts with `clamp()`:** Learning how to calculate linear interpolation to scale pixel values smoothly across viewports (from 375px to 1440px). This helped solve layout bugs where absolute background shapes would drift off-screen on larger monitors.
 
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
+- **Complex CSS Shapes & Gradients:** Mastering custom `border-radius` combinations (e.g., `border-bottom-right-radius: 50% 35%`) alongside multi-stop linear gradients to replicate the design mockup accurately.
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+- **Clean React Architecture:** Structuring reusable components cleanly and ensuring proper JSX attributes (like passing booleans correctly to `readOnly` attributes) and accessibility guidelines.
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+Moving forward, I want to continue refining my approach to responsive design:
 
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+- **Refining Position Strategies:** Exploring alternative methods for positioning background assets, such as using `left: 50%` combined with `transform: translateX()` relative to a container, to see if it provides better stability than absolute pixel offsets.
+
+- **CSS Architecture:** Keeping CSS clean, modular, and maintainable as projects scale.
+
+- **Advanced Accessibility:** Ensuring all interactive components and custom UI elements are fully accessible via keyboard and screen readers.
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+- [MDN - CSS Gradient Reference](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/gradient) - Great reference for understanding CSS gradient types.
+- [MDN - linear-gradient()](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/gradient/linear-gradient) - Helped with creating smooth background gradients.
+- [MDN - border-bottom-right-radius](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/border-bottom-right-radius) - Essential for creating elliptical curve shapes.
+- [CSS Gradient Generator](https://cssgradient.io/) - Useful visual tool for tweaking gradient colors and angles.
+- [CSS-Tricks - Multiple Class / ID Selectors](https://css-tricks.com/multiple-class-id-selectors/) - Great refresher on selector specificity and combinations.
+- [Atmos - RGB to HSL Converter](https://atmos.style/color-converter/rgb-to-hsl) - Handy tool for converting color formats to match design tokens.
 
 ### AI Collaboration
 
-Describe how you used AI tools (if any) during this project. This helps demonstrate your ability to work effectively with AI assistants.
-
-- What tools did you use (e.g., ChatGPT, Claude, GitHub Copilot)?
-- How did you use them (e.g., debugging, generating boilerplate, brainstorming solutions)?
-- What worked well? What didn't?
-
-**Note: Delete this note and the content above if you didn't use AI, or replace with your own experience.**
+- **Google Gemini & Google Search AI Mode:** Used as a thoughtful partner for troubleshooting CSS layout behaviors, deriving linear equations for `clamp()`, and reviewing React code for best practices and accessibility improvements.
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
+- GitHub: [Kairung Vangmanaw](https://github.com/VangmanawKairung)
+- Frontend Mentor - [@VangmanawKairung](https://www.frontendmentor.io/profile/VangmanawKairung)
 
 ## Acknowledgments
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
+Huge thanks to myself for pushing through, and to my family for their endless support. I’m deeply grateful to Frontend Mentor for another great challenge, and to Apple for macOS Preview, which made inspecting exact pixel values effortless without Figma. 
 
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+Special thanks to Chrome DevTools, VS Code, Gemini, and Google Search AI Mode for being invaluable companions throughout the build process.
